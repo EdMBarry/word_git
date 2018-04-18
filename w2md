@@ -2,5 +2,5 @@
 
 for filename in *.docx
 do
-    pandoc -f docx -t markdown ${filename%.*}.docx -o ${filename%.*}.md
+    pandoc -s ${filename%.*}.docx -t markdown -o ${filename%.*}.md
 done
